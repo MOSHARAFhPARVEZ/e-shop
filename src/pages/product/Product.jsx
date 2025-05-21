@@ -1,8 +1,13 @@
 import React from 'react'
-
+import { Helmet } from 'react-helmet'
 const Product = () => {
   return (
-    <div>Product</div>
+    <>
+      <Helmet>
+        <title>Product</title>
+      </Helmet>
+      <h1>Product</h1>
+    </>
   )
 }
 
