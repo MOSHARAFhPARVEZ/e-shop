@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import GlobalContainer from '../../globalComponents/GlobalContainer'
 
 const Home = () => {
 
@@ -9,7 +10,9 @@ const Home = () => {
         <title>Home</title>
       </Helmet>
 
-      <h1>Home</h1>
+      <GlobalContainer>
+        <h1>Home</h1>
+      </GlobalContainer>
     </>
   )
 }

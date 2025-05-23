@@ -1,8 +1,13 @@
 import React from 'react'
+import GlobalContainer from '../../GlobalContainer'
+import HeaderComponent from '../../headerComponents/HeaderComponent'
+
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <>
+      <HeaderComponent/>
+    </>
   )
 }
 
