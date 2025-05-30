@@ -4,33 +4,54 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import i18n from '../../../service/i18n';
 
 const LangSocialCurr = () => {
+
     const currency = [
         { value: '1', label: 'USD' },
         { value: '2', label: 'TK' },
         { value: '3', label: 'Rupi' },
     ]
-    const language = [
-        { 
-            value: 'en', 
-            label:(
-                <div className='flex items-center gap-x-2'>
-                    <img src="https://flagcdn.com/us.svg" alt="flag" className='w-[20px] h-[20px]' />
-                    <span>English</span>
-                </div>
-            )
+    const countriesOptionsWithFlag = [
+        {
+          value: "us",
+          language: "en",
+          label: (
+            <div className="flex items-center gap-x-2">
+              <img
+                src="https://flagcdn.com/us.svg"
+                alt="flag"
+                className="w-[20px] h-[20px]"
+              />
+              <span>English</span>
+            </div>
+          ),
         },
-        { 
-            value: 'bd', 
-            label:(
-                <div className='flex items-center gap-x-2'>
-                    <img src="https://flagcdn.com/bd.svg" alt="flag" className='w-[20px] h-[20px]' />
-                    <span>Bangladesh</span>
-                </div>
-            )
+        {
+          value: "bd",
+          language: "bd",
+          label: (
+            <div className="flex items-center gap-x-2">
+              <img
+                src="https://flagcdn.com/bd.svg"
+                alt="flag"
+                className="w-[20px] h-[20px]"
+              />
+              <span>Bangla</span>
+            </div>
+          ),
         },
-    ]
+      ];
+    
+      const handleLanguageChange = (value) => {
+        const findLanguage = countriesOptionsWithFlag.find(
+          (language) => language.value === value
+        );
+        if (findLanguage) {
+          i18n.changeLanguage(findLanguage.language || "en");
+        }
+      };
   return (
     <>
     
@@ -56,23 +77,13 @@ const LangSocialCurr = () => {
         </div>
         <div className='w-[1px] h-[32px] bg-black02op25'></div>
         <div>
-            <Select
-                showSearch
-                defaultValue={language[0]}
-                className='customSelect'
-                filterOption={(input, option) => {
-                var _a;
-                return (
-                    (_a = option === null || option === void 0 ? void 0 : option.label) !== null &&
-                    _a !== void 0
-                    ? _a
-                    : ''
-                )
-                    .toLowerCase()
-                    .includes(input.toLowerCase());
-                }}
-                options={language}
-            />
+        <Select
+          defaultValue={countriesOptionsWithFlag[0].value}
+          style={{ width: 120 }}
+          onChange={handleLanguageChange}
+          options={countriesOptionsWithFlag}
+          className="customSelect"
+        />
         </div>
         <div className='w-[1px] h-[32px] bg-black02op25'></div>
         <div className='flex items-center gap-x-[24px]'>

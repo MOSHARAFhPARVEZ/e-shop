@@ -1,9 +1,10 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import GlobalContainer from '../../globalComponents/GlobalContainer'
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
-
+const {t} = useTranslation()
   return (
     <>
       <Helmet>
@@ -11,7 +12,7 @@ const Home = () => {
       </Helmet>
 
       <GlobalContainer>
-        <h1>Home</h1>
+        <h1>{t('this_is_home_page')}</h1>
       </GlobalContainer>
     </>
   )
