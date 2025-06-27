@@ -1,6 +1,7 @@
 import React from 'react'
 import GlobalContainer from '../../GlobalContainer'
 import Logo from '../../../assets/svg/logo'
+import SearchWithAuth from './SearchWithAuth'
 
 const Navbar = () => {
   return (
@@ -10,7 +11,9 @@ const Navbar = () => {
                 <div>
                     <Logo />
                 </div>
-                <div>fds</div>
+                <div>
+                  <SearchWithAuth/>
+                </div>
             </div>
         </GlobalContainer>
     </>

@@ -22,6 +22,7 @@
   --color-white02: #D9D9D9;
   --color-red02: #EB001B;
   --color-black02op25: #30303040;
+  --color-black02op50: #30303080;
 }
 
 
@@ -48,3 +49,11 @@
   box-shadow: none !important;
 }
 
+.search_products {
+  /* width: 332px;
+  height: 56px;
+  border-radius: 10px;
+  border: 1px solid #30303080;
+  padding: 18px 18px; */
+  outline: none;
+}

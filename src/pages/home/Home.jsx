@@ -1,7 +1,7 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import GlobalContainer from '../../globalComponents/GlobalContainer'
 import { useTranslation } from "react-i18next";
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
 const {t} = useTranslation()
