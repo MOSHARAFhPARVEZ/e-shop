@@ -2,41 +2,85 @@ import { Dropdown , Space } from 'antd'
 import React from 'react'
 import { DownOutlined } from '@ant-design/icons';
 import { FaBars } from "react-icons/fa";
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+
 
 const MenubarCategories = () => {
+  const {t} = useTranslation();
   const items = [
+    
     {
       label: (
-        <a href="https://www.antgroup.com" target="_blank" rel="noopener noreferrer">
-          1st menu item
-        </a>
+        <Link to="/product">
+          Computers & Tablets
+        </Link>
       ),
       key: '0',
     },
+    
     {
       label: (
-        <a href="https://www.aliyun.com" target="_blank" rel="noopener noreferrer">
-          2nd menu item
-        </a>
+        <Link to="/product">
+          Mobile & Accessories
+        </Link>
       ),
       key: '1',
     },
+    
     {
-      type: 'divider',
-    },
-    {
-      label: '3rd menu item',
+      label: (
+        <Link to="/product">
+          TV & Home Theater
+        </Link>
+      ),
       key: '3',
     },
+    
+    {
+      label: (
+        <Link to="/product">
+          Audio & Headphones
+        </Link>
+      ),
+      key: '4',
+    },
+    
+    {
+      label: (
+        <Link to="/product">
+          Cameras & Camcorders
+        </Link>
+      ),
+      key: '5',
+    },
+    
+    {
+      label: (
+        <Link to="/product">
+         Gaming Equipment
+        </Link>
+      ),
+      key: '6',
+    },
+    
+    {
+      label: (
+        <Link to="/product">
+         Home Appliances
+        </Link>
+      ),
+      key: '7',
+    },
+
   ];
   return (
     <>
       <Dropdown menu={{ items }} trigger={['click']}>
         <a onClick={e => e.preventDefault()}>
-          <Space>
-          <FaBars />
-            Click me
-          </Space>
+            <Space className='font-montserrat font-bold text-base text-white leading-[24px] cursor-pointer'>
+              <FaBars /> {t('all_categories')}
+            </Space>
         </a>
       </Dropdown>
     </>
