@@ -12,7 +12,7 @@ const MenubarCategories = () => {
     
     {
       label: (
-        <Link to="/product">
+        <Link to="/product" classname="font-montserrat font-normal text-base text-black01 pb-0.5">
           Computers & Tablets
         </Link>
       ),
@@ -21,7 +21,7 @@ const MenubarCategories = () => {
     
     {
       label: (
-        <Link to="/product">
+        <Link to="/product" classname="font-montserrat font-normal text-base text-black01 pb-0.5">
           Mobile & Accessories
         </Link>
       ),
@@ -30,7 +30,7 @@ const MenubarCategories = () => {
     
     {
       label: (
-        <Link to="/product">
+        <Link to="/product" classname="font-montserrat font-normal text-base text-black01 pb-0.5">
           TV & Home Theater
         </Link>
       ),
@@ -39,7 +39,7 @@ const MenubarCategories = () => {
     
     {
       label: (
-        <Link to="/product">
+        <Link to="/product" classname="font-montserrat font-normal text-base text-black01 pb-0.5">
           Audio & Headphones
         </Link>
       ),
@@ -48,7 +48,7 @@ const MenubarCategories = () => {
     
     {
       label: (
-        <Link to="/product">
+        <Link to="/product" classname="font-montserrat font-normal text-base text-black01 pb-0.5">
           Cameras & Camcorders
         </Link>
       ),
@@ -57,7 +57,7 @@ const MenubarCategories = () => {
     
     {
       label: (
-        <Link to="/product">
+        <Link to="/product" classname="font-montserrat font-normal text-base text-black01 pb-0.5">
          Gaming Equipment
         </Link>
       ),
@@ -66,7 +66,7 @@ const MenubarCategories = () => {
     
     {
       label: (
-        <Link to="/product">
+        <Link to="/product" classname="font-montserrat font-normal text-base text-black01 pb-0.5">
          Home Appliances
         </Link>
       ),
