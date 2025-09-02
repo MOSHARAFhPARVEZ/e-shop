@@ -6,5 +6,9 @@
   "account": "Account",
   "blog": "Blog",
   "contact": "Contact",
-  "all_categories": "All Categories"
+  "all_categories": "All Categories",
+  "products": "Products",
+  "LIMITED_SALE" : "LIMITED SALE",
+  "Best_Seller" : "Best Seller",
+  "New_Arrival" : "New Arrival"
 }

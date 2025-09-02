@@ -2,6 +2,7 @@ import React from 'react'
 import GlobalContainer from '../../globalComponents/GlobalContainer'
 import { useTranslation } from "react-i18next";
 import { Helmet } from 'react-helmet-async';
+import Banner from './Components/Banner/Banner';
 
 const Home = () => {
 const {t} = useTranslation()
@@ -12,7 +13,7 @@ const {t} = useTranslation()
       </Helmet>
 
       <GlobalContainer>
-        <h1>{t('this_is_home_page')}</h1>
+        <Banner/>
       </GlobalContainer>
     </>
   )

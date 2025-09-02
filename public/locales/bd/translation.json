@@ -6,6 +6,10 @@
   "account": "অ্যাকাউন্ট",
   "blog": "ব্লগ",
   "contact": "যোগাযোগ করুন",
-  "all_categories": "সমস্ত ক্যাটাগরি"
+  "all_categories": "সমস্ত ক্যাটাগরি",
+  "products": "পণ্য সমূহ",
+  "LIMITED_SALE" : "সীমিত বিক্রয়",
+  "Best_Seller" : "সেরা পণ্য",
+  "New_Arrival" : "নতুন আগমন"
   
 } 
