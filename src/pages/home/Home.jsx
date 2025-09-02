@@ -1,11 +1,12 @@
 import React from 'react'
 import GlobalContainer from '../../globalComponents/GlobalContainer'
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 import { Helmet } from 'react-helmet-async';
 import Banner from './Components/Banner/Banner';
+import SupportContent from './Components/Support/SupportContent';
 
 const Home = () => {
-const {t} = useTranslation()
+// const {t} = useTranslation()
   return (
     <>
       <Helmet>
@@ -14,6 +15,7 @@ const {t} = useTranslation()
 
       <GlobalContainer>
         <Banner/>
+        <SupportContent/>
       </GlobalContainer>
     </>
   )
