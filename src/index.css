@@ -57,3 +57,19 @@
   padding: 18px 18px; */
   outline: none;
 }
+
+.word-space-sm {
+  word-spacing: 4px;
+}
+
+.word-space-md {
+  word-spacing: 8px;
+}
+
+.word-space-lg {
+  word-spacing: 12px;
+}
+
+.word-space-xl {
+  word-spacing: 20px;
+}
