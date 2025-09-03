@@ -4,6 +4,7 @@ import GlobalContainer from '../../globalComponents/GlobalContainer'
 import { Helmet } from 'react-helmet-async';
 import Banner from './Components/Banner/Banner';
 import SupportContent from './Components/Support/SupportContent';
+import FeaturedProducts from './Components/featuredPoroducts/FeaturedProducts';
 
 const Home = () => {
 // const {t} = useTranslation()
@@ -16,6 +17,7 @@ const Home = () => {
       <GlobalContainer>
         <Banner/>
         <SupportContent/>
+        <FeaturedProducts/>
       </GlobalContainer>
     </>
   )
