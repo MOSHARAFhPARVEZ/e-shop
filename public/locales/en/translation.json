@@ -10,5 +10,7 @@
   "products": "Products",
   "LIMITED_SALE" : "LIMITED SALE",
   "Best_Seller" : "Best Seller",
-  "New_Arrival" : "New Arrival"
+  "New_Arrival" : "New Arrival",
+  "Featured_Products" : "Featured Products",
+  "View_All" : "View All"
 }
