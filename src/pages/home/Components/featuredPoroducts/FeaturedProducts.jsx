@@ -19,10 +19,10 @@ const FeaturedProducts = () => {
           <span className='text-orange group-hover:text-black01 group-hover:translate-x-2 transition-transform duration-300'><FaArrowRightLong size='28px'/></span>
         </div>
       </div>
-      <div className='grid grid-cols-4 mt-[48px]'>
+      <div className='grid grid-cols-5 mt-[48px]'>
         {
           FeaturedProductData?.map((product)=>(
-            <ProductCards key={product.id} image={product?.image} rating={product?.rating} title={product.title} category={product.category} discount={product.discount} />
+            <ProductCards key={product.id} image={product?.image} rating={product?.rating} title={product.title} category={product.category} totalRating={product.totalRating} price={product.price} discount={product.discount} />
           ))
         }
       </div>

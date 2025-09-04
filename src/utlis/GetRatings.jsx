@@ -31,6 +31,6 @@ export const getstart = (rating) => {
         );        
     }
 
-    return stars;
+    return <div className="flex items-center mt-2 gap-x-0.5">{stars}</div>;
 
 }

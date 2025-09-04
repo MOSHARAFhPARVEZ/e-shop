@@ -11,13 +11,14 @@ import Image10  from '../../../../assets/ProductImage/featured_product/image10.j
 import Image11  from '../../../../assets/ProductImage/featured_product/image11.webp'
 import Image12  from '../../../../assets/ProductImage/featured_product/image12.webp'
 
-export const FeaturedProductData =[
+export const FeaturedProductData = [
     {
         id: 1,
         image: ImageOne,
         category: "PHONE",
         title: "JPhone 13 High Quality Value Buy Best Camera",
         rating: 5,
+        totalRating: 5,
         price: 999.00,
         discount: 25
     },
@@ -27,6 +28,7 @@ export const FeaturedProductData =[
         category: "LAPTOP",
         title: "XBook Pro 15 Slim Performance Laptop",
         rating: 4.5,
+        totalRating: 4,
         price: 1299.00,
         discount: 15
     },
@@ -36,6 +38,7 @@ export const FeaturedProductData =[
         category: "HEADPHONE",
         title: "SoundMax Wireless Noise Cancelling Headphone",
         rating: 5,
+        totalRating: 5,
         price: 199.00,
         discount: 20
     },
@@ -45,6 +48,7 @@ export const FeaturedProductData =[
         category: "WATCH",
         title: "TimeX Smart Fitness Watch Waterproof",
         rating: 0,
+        totalRating: 0,
         price: 149.00,
         discount: null
     },
@@ -54,6 +58,7 @@ export const FeaturedProductData =[
         category: "TABLET",
         title: "TabAir 11 Ultra Light Android Tablet",
         rating: 4,
+        totalRating: 4,
         price: 499.00,
         discount: 18
     },
@@ -63,6 +68,7 @@ export const FeaturedProductData =[
         category: "TV",
         title: "VisionX 55 Inch 4K Ultra HD Smart TV",
         rating: 5,
+        totalRating: 5,
         price: 699.00,
         discount: null
     },
@@ -72,6 +78,7 @@ export const FeaturedProductData =[
         category: "CAMERA",
         title: "CanonX Pro DSLR Professional Photography Camera",
         rating: 5,
+        totalRating: 5,
         price: 899.00,
         discount: 30
     },
@@ -81,6 +88,7 @@ export const FeaturedProductData =[
         category: "SPEAKER",
         title: "BoomBox Bluetooth Party Speaker",
         rating: 4,
+        totalRating: 4,
         price: 249.00,
         discount: null
     },
@@ -90,6 +98,7 @@ export const FeaturedProductData =[
         category: "MONITOR",
         title: "UltraView 27 Inch Curved Gaming Monitor",
         rating: 5,
+        totalRating: 5,
         price: 329.00,
         discount: 17
     },
@@ -99,6 +108,7 @@ export const FeaturedProductData =[
         category: "PRINTER",
         title: "PrintJet Pro Wireless Inkjet Printer",
         rating: 3,
+        totalRating: 3,
         price: 159.00,
         discount: null
     },
@@ -108,6 +118,7 @@ export const FeaturedProductData =[
         category: "MOUSE",
         title: "ClickPro Ergonomic Wireless Mouse",
         rating: 4,
+        totalRating: 4,
         price: 49.00,
         discount: 5
     },
@@ -117,7 +128,9 @@ export const FeaturedProductData =[
         category: "KEYBOARD",
         title: "TypeFast Mechanical RGB Gaming Keyboard",
         rating: 5,
+        totalRating: 5,
         price: 119.00,
         discount: null
     }
-] 
+];
+ 
