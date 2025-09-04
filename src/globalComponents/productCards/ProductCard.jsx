@@ -1,10 +1,12 @@
 import { Tooltip } from 'antd'
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { getstart } from '../../utlis/GetRatings'
 
-const ProductCards = ({image , discount , category , title}) => {
+const ProductCards = ({image , discount , category , title , rating}) => {
   return (
     <>
-        <div className='border border-transparent hover:border-black02op25 pt-[24px] pr-[24px] pb-[44px] pl-[23px] rounded-[10px] max-w-[285px]'>
+        <div className='border border-transparent hover:border-black02op25 pt-[24px] pr-[24px] pb-[44px] pl-[23px] rounded-[10px]'>
             <div className='relative'>
                 <div className=' w-full h-[214px] overflow-hidden rounded-[10px]'>
                     <img src={image} alt="product image" className='w-full h-full ' />
@@ -18,15 +20,20 @@ const ProductCards = ({image , discount , category , title}) => {
             <div className='mt-10'>
                 <h6 className='font-montserrat text-[14px] text-black01 leading-5 font-normal uppercase tracking-[12px] mb-4'>{category}</h6>
                 {
-                    title?.length > 15 ? (
-                        <Tooltip placement="topRight" color='#fff' title={<h3 className='font-poppins font-semibold text-black01 text-sm leading-5'>{title}</h3>}>
-                            <h3 className='font-poppins font-semibold text-black01 text-[20px] leading-[30px] truncate cursor-pointer'>
+                    
+                    title?.length > 12 ? (
+                        <Tooltip placement="topRight" color='#fff' title={<h6  className='font-poppins font-semibold text-black01 text-sm leading-5'>{title}</h6>}>
+                            <Link to='/product' className='font-poppins font-semibold text-black01 text-[20px] leading-[30px] truncate block max-w-[235px] cursor-pointer hover:text-orange duration-300'>
                                 {title}
-                            </h3>
+                            </Link>
                         </Tooltip>
                     ) : (
-                         <h3 className='font-poppins font-semibold text-black01 text-[20px] leading-[30px] truncate cursor-pointer'>{title}</h3>
+                         <Link to='/product' className='font-poppins font-semibold text-black01 text-[20px] leading-[30px] truncate block max-w-[235px] cursor-pointer hover:text-orange duration-300'>{title}</Link>
                     )
+                }
+
+                {
+                    getstart(rating)
                 }
                 
                 

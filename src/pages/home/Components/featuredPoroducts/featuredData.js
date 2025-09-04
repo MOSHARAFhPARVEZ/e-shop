@@ -1,15 +1,15 @@
-import ImageOne from '../../../../assets/ProductImage/imageOne.webp'
-import Image2 from '../../../../assets/ProductImage/imageTwo.webp'
-import Image3 from '../../../../assets/ProductImage/image3.webp'
-import Image4 from '../../../../assets/ProductImage/image4.webp'
-import Image5 from '../../../../assets/ProductImage/image5.webp'
-import Image6 from '../../../../assets/ProductImage/image6.webp'
-import Image7 from '../../../../assets/ProductImage/image7.jpg'
-import Image8 from '../../../../assets/ProductImage/image8.jpg'
-import Image9 from '../../../../assets/ProductImage/image9.jpg'
-import Image10 from '../../../../assets/ProductImage/image10.jpg'
-import Image11 from '../../../../assets/ProductImage/image11.webp'
-import Image12 from '../../../../assets/ProductImage/image12.webp'
+import ImageOne from '../../../../assets/ProductImage/featured_product/imageOne.webp'
+import Image2   from '../../../../assets/ProductImage/featured_product/imageTwo.webp'
+import Image3   from '../../../../assets/ProductImage/featured_product/image3.webp'
+import Image4   from '../../../../assets/ProductImage/featured_product/image4.webp'
+import Image5   from '../../../../assets/ProductImage/featured_product/image5.webp'
+import Image6   from '../../../../assets/ProductImage/featured_product/image6.webp'
+import Image7   from '../../../../assets/ProductImage/featured_product/image7.jpg'
+import Image8   from '../../../../assets/ProductImage/featured_product/image8.jpg'
+import Image9   from '../../../../assets/ProductImage/featured_product/image9.jpg'
+import Image10  from '../../../../assets/ProductImage/featured_product/image10.jpg'
+import Image11  from '../../../../assets/ProductImage/featured_product/image11.webp'
+import Image12  from '../../../../assets/ProductImage/featured_product/image12.webp'
 
 export const FeaturedProductData =[
     {
@@ -26,12 +26,12 @@ export const FeaturedProductData =[
         image: Image2,
         category: "LAPTOP",
         title: "XBook Pro 15 Slim Performance Laptop",
-        rating: 4,
+        rating: 4.5,
         price: 1299.00,
         discount: 15
     },
     {
-        id: 3,
+        id: 3.3,
         image: Image3,
         category: "HEADPHONE",
         title: "SoundMax Wireless Noise Cancelling Headphone",
@@ -44,7 +44,7 @@ export const FeaturedProductData =[
         image: Image4,
         category: "WATCH",
         title: "TimeX Smart Fitness Watch Waterproof",
-        rating: 4,
+        rating: 0,
         price: 149.00,
         discount: null
     },

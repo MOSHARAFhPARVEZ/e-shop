@@ -4,6 +4,7 @@ import { FaArrowRightLong } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 import ProductCards from '../../../../globalComponents/productCards/ProductCard'
 import ImageOne from '../../../../assets/ProductImage/featured_product/imageOne.webp'
+import { FeaturedProductData } from './featuredData'
 
 const FeaturedProducts = () => {
   const {t} = useTranslation()
@@ -18,8 +19,12 @@ const FeaturedProducts = () => {
           <span className='text-orange group-hover:text-black01 group-hover:translate-x-2 transition-transform duration-300'><FaArrowRightLong size='28px'/></span>
         </div>
       </div>
-      <div className='mt-[48px]'>
-        <ProductCards  image={ImageOne} discount={true} />
+      <div className='grid grid-cols-4 mt-[48px]'>
+        {
+          FeaturedProductData?.map((product)=>(
+            <ProductCards key={product.id} image={product?.image} rating={product?.rating} title={product.title} category={product.category} discount={product.discount} />
+          ))
+        }
       </div>
 
     </>
