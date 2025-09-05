@@ -3,14 +3,30 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { getstart } from '../../utlis/GetRatings'
 import { getPrice } from '../../utlis/GetDiscountPrice'
+import { FaOpencart } from 'react-icons/fa'
+import { FiHeart } from 'react-icons/fi'
+import { CiShare2 } from 'react-icons/ci'
 
 const ProductCards = ({image , price , category , title , rating , totalRating , discount}) => {
   return (
     <>
         <div className='border group border-transparent hover:border-black02op25 pt-[24px] pr-[24px] pb-[44px] pl-[23px] rounded-[10px]'>
             <div className='relative'>
-                <div className=' w-full h-[214px] overflow-hidden rounded-[10px]'>
+                <div className='relative w-full h-[214px] overflow-hidden rounded-[10px]'>
                     <img src={image} alt="product image" className='w-full h-full ' />
+                    <div className='absolute bottom-[28px] left-2/4 -translate-x-2/4 translate-y-10 opacity-0  group-hover:translate-y-0 group-hover:opacity-100 transition-all ease-linear duration-300'>
+                        <div className='flex  items-center gap-x-[18px] '>
+                            <div className='w-[50px] h-[50px] rounded-full border border-orange flex items-center justify-center bg-white text-orange hover:bg-orange transition-all ease-in duration-300 hover:text-white font-bold text-[20px] cursor-pointer' title='Add to Cart'>
+                                <FaOpencart />
+                            </div>
+                            <div className='w-[50px] h-[50px] rounded-full border border-orange flex items-center justify-center bg-white text-orange hover:bg-orange transition-all ease-in duration-300 hover:text-white font-bold text-[20px] cursor-pointer' title='Add to Wishlist'>
+                                <FiHeart />
+                            </div>
+                            <div className='w-[50px] h-[50px] rounded-full border border-orange flex items-center justify-center bg-white text-orange hover:bg-orange transition-all ease-in duration-300 hover:text-white font-bold text-[20px] cursor-pointer' title='share'>
+                                <CiShare2 />
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 {
                     discount && <div className='absolute -top-[8px] -right-[9px] px-[20px] py-[7px] w-fit bg-orange rounded-[5px]'>
