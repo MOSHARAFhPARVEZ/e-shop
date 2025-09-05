@@ -8,7 +8,7 @@ const Menubarleft = () => {
   return (
     <>
         <div className='flex items-center gap-x-[80px] py-[24px]'>
-            <MenubarCategories/>
+            <MenubarCategories isMenu={true} className='font-montserrat font-bold text-base text-white leading-[24px] cursor-pointer' />
             <Link to="/product" className='font-montserrat font-bold text-base text-white leading-[24px]' >{t('products')}</Link>
             <Link to="/blog" className='font-montserrat font-bold text-base text-white leading-[24px]' >{t('blog')}</Link>
             <Link to="/contact" className='font-montserrat font-bold text-base text-white leading-[24px]' >{t('contact')}</Link>
