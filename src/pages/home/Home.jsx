@@ -7,6 +7,7 @@ import SupportContent from './Components/Support/SupportContent';
 import FeaturedProducts from './Components/featuredPoroducts/FeaturedProducts';
 import MiddleBanner from './MiddleBanner';
 import NewProduct from './Components/NewProduct/NewProduct';
+import Offer from './Components/offer/Offer';
 
 const Home = () => {
 // const {t} = useTranslation()
@@ -16,13 +17,15 @@ const Home = () => {
         <title>Home</title>
       </Helmet>
 
-      <GlobalContainer>
+      {/* All Components Part Start Here  */}
         <Banner/>
         <SupportContent/>
         <FeaturedProducts/>
         <MiddleBanner />
         <NewProduct />
-      </GlobalContainer>
+        <Offer/>
+      {/* All Components Part End Here  */}
+
     </>
   )
 }
