@@ -1,8 +1,40 @@
 import React from 'react'
+import { OfferData } from './OfferData'
+import { Autoplay, Navigation } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import OfferProductCard from './OfferProductCard'
+import NextBtn from './NextBtn'
 
 const OfferRight = () => {
   return (
-    <div>OfferRight</div>
+    <>
+        <div className='relative'>
+            <div className='absolute top-2/4 -translate-y-2/4 -right-5 z-30 swiper-next-btn-offer'><NextBtn/></div>
+            <Swiper
+              spaceBetween={20}
+              slidesPerView={2}
+              modules={[ Autoplay , Navigation]}
+              navigation={{ 
+                nextEl: ".swiper-next-btn-offer",
+                prevEl: ".swiper-prev-btn",
+              }}
+              loop={true}
+              autoplay={{ 
+                delay: 2000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              }}
+            >
+              {
+                OfferData?.map((product)=>(
+                  <SwiperSlide>
+                    <OfferProductCard key={product.id} image={product?.image} rating={product?.rating} title={product.title} category={product.category} totalRating={product.totalRating} price={product.price} discount={product.discount} />
+                  </SwiperSlide>
+                ))
+              }
+            </Swiper>
+        </div>
+    </>
   )
 }
 

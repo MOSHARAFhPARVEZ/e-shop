@@ -3,6 +3,7 @@ import Countdown from 'react-countdown';
 import { useTranslation } from 'react-i18next'
 import CountDown from './CountDown';
 import CommonButton from '../../../../globalComponents/CommonButton';
+import DotImage from '../../../../assets/dot_img.png'
 
 const OfferLef = () => {
     const {t} = useTranslation();
@@ -18,6 +19,9 @@ const OfferLef = () => {
             <CommonButton className="!bg-orange !py-[20px] !px-10 !border-0 mt-[72px] !rounded-[10px]" >
                 <span className='font-montserrat font-bold text-[20px] leading-[30px] text-white hover:text-white'>Shop Now</span>
             </CommonButton>
+            <div className='mt-20'>
+                <img src={DotImage} alt="" />
+            </div>
         </div>
     </>
   )
