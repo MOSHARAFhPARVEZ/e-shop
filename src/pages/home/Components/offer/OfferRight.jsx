@@ -28,7 +28,7 @@ const OfferRight = () => {
               {
                 OfferData?.map((product)=>(
                   <SwiperSlide>
-                    <OfferProductCard key={product.id} image={product?.image} rating={product?.rating} title={product.title} category={product.category} totalRating={product.totalRating} price={product.price} discount={product.discount} />
+                    <OfferProductCard key={product.id} image={product?.image} rating={product?.rating} title={product.title} category={product.category} totalRating={product.totalRating} price={product.price} discount={product.discount} stock={product.stock}  sold={product.sold} />
                   </SwiperSlide>
                 ))
               }

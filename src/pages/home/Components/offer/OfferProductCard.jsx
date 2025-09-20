@@ -1,21 +1,18 @@
-import React from 'react'
-import { OfferData } from './OfferData'
-import { Autoplay, Navigation } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import ProductCards from '../../../../globalComponents/productCards/ProductCard'
 import { Link } from 'react-router-dom'
 import { getstart } from '../../../../utlis/GetRatings'
 import { getPrice } from '../../../../utlis/GetDiscountPrice'
-import { FaOpencart } from 'react-icons/fa'
-import { FiHeart } from 'react-icons/fi'
-import { CiShare2 } from 'react-icons/ci'
-import { Tooltip } from 'antd'
+import { Progress, Tooltip } from 'antd'
+import useStockStatus from '../../homeHooks/useStockStatus'
 
-const OfferProductCard = ( {image, discount , price , rating, title, category, totalRating,} ) => {
+const OfferProductCard = ( {image, discount , price , rating, title, category, totalRating, stock, sold} ) => {
+
+    const {status,color,percentage} = useStockStatus(stock , sold);
+
+
   return (
     <>
         <div>
-            <div className='border group border-transparent bg-white02 hover:bg-white  pt-[24px] pr-[24px] pb-[44px] pl-[23px] rounded-[10px]' >
+            <div className='border group border-transparent bg-white03 hover:bg-white  pt-[24px] pr-[24px] pb-[44px] pl-[23px] rounded-[10px]' >
                 <div className='relative'>
                     <div className=' w-full h-[345px] overflow-hidden rounded-[10px]'>
                         <img src={image} alt="product image" className='w-full h-full ' />
@@ -57,6 +54,11 @@ const OfferProductCard = ( {image, discount , price , rating, title, category, t
                                 </span>
                             )
                         }
+                    </div>
+                    
+                    <div className='mt-6 bg-white02 w-full rounded-full relative z-[1]'>
+                        <div className='absolute top-0 left-0 h-full rounded-full transition-all duration-300 ease-in-out -z-[1]' style={{backgroundColor: color, width:`${percentage}%`}}></div>
+                       <h5 className='text-center text-white uppercase'>{status}</h5>
                     </div>
     
                 </div>
