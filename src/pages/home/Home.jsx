@@ -8,6 +8,8 @@ import FeaturedProducts from './Components/featuredPoroducts/FeaturedProducts';
 import MiddleBanner from './MiddleBanner';
 import NewProduct from './Components/NewProduct/NewProduct';
 import Offer from './Components/offer/Offer';
+import BestSeller from './Components/bestSeller/BestSeller';
+import Faq from './Components/faq/Faq';
 
 const Home = () => {
 // const {t} = useTranslation()
@@ -24,6 +26,8 @@ const Home = () => {
         <MiddleBanner />
         <NewProduct />
         <Offer/>
+        <BestSeller/>
+        <Faq/>
       {/* All Components Part End Here  */}
 
     </>
