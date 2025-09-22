@@ -2,21 +2,21 @@ import { useMemo } from "react"
 
 const useStockStatus = (stock , sold) => {
     return useMemo(() => {
-        const total = stock + sold;
-        const percentage = total > 0 ? (stock / total ) * 100 :0;
-        const roundedPercentage = Math.round(percentage);
+        const availableStock = stock - sold;
+        const soldpercentage = sold > 0 ? (sold / stock ) * 100 :0;
+        const roundedPercentage = Math.round(soldpercentage);
 
 
         console.log("roundedPercentage", roundedPercentage);
         
 
-        if(roundedPercentage == 0){
+        if(roundedPercentage >= 100 || availableStock <= 0){
             return {
                 status: "Out of Stock",
                 color: "red",
                 percentage: 0
             }
-        } else if (roundedPercentage <= 20){
+        } else if (roundedPercentage >= 80) {
             return {
                 status: "Limited Stock",
                 color: "#FF624C",
@@ -24,7 +24,7 @@ const useStockStatus = (stock , sold) => {
             }
         } else {
             return {
-                status: `${stock} Available`,
+                status: `${availableStock} Available`,
                 color: "#000",
                 percentage: roundedPercentage
             }

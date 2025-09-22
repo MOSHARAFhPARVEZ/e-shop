@@ -58,7 +58,7 @@ const OfferProductCard = ( {image, discount , price , rating, title, category, t
                     
                     <div className='mt-6 bg-white02 w-full rounded-full relative z-[1]'>
                         <div className='absolute top-0 left-0 h-full rounded-full transition-all duration-300 ease-in-out -z-[1]' style={{backgroundColor: color, width:`${percentage}%`}}></div>
-                       <h5 className='text-center text-white uppercase'>{status}</h5>
+                       <h5 className='text-center text-white uppercase font-montserrat font-bold leading-[24px]'>{status}</h5>
                     </div>
     
                 </div>

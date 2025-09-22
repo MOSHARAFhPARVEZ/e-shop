@@ -22,7 +22,7 @@ export const OfferData = [
         price: 999.00,
         discount: 25,
         stock: 50,
-        sold: 20
+        sold: 45
     },
     {
         id: 2,
