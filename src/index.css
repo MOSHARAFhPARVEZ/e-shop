@@ -87,6 +87,7 @@
   background-color: white !important;
   padding: 15px !important;
   border: none !important;
+  margin-bottom: 24px !important;
 }
 
 .custom-collapse .ant-collapse-content {
@@ -120,4 +121,20 @@
 
 .custom-collapse .ant-collapse-content-box {
   padding: 0 16px !important;
+}
+
+.custom-collapse .ant-collapse-header-text {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  line-height: 30px !important;
+  color: #000 !important;
+}
+
+.custom-collapse .ant-collapse-content-box p {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 30px !important;
+  color: #303030 !important;
 }
