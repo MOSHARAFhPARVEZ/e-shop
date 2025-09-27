@@ -1,13 +1,16 @@
 import React from 'react'
 import GlobalContainer from '../../../../globalComponents/GlobalContainer'
+import RightFaq from './components/RightFaq'
+import LeftFaq from './components/LeftFaq'
 
 const Faq = () => {
   return (
     <>
         <section className='py-16 bg-white01'>
             <GlobalContainer>
-                <div>
-                    <h2 className='text-2xl font-semibold mb-6'>FAQ Section</h2>
+                <div className='grid grid-cols-[2fr_1fr] gap-x-[110px]'>
+                    <RightFaq/>
+                    <LeftFaq/>
                 </div>
             </GlobalContainer>
         </section>
