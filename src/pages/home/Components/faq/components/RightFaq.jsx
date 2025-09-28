@@ -9,6 +9,7 @@ const RightFaq = () => {
           {
             FaqData.map((item) => (
               <Collapse
+              key={item.key}
                 rootClassName='custom-collapse'
                 items={[item]}
             />

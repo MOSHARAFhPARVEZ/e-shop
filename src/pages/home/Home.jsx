@@ -10,6 +10,7 @@ import NewProduct from './Components/NewProduct/NewProduct';
 import Offer from './Components/offer/Offer';
 import BestSeller from './Components/bestSeller/BestSeller';
 import Faq from './Components/faq/Faq';
+import Blog from './Components/blog/Blog';
 
 const Home = () => {
 // const {t} = useTranslation()
@@ -28,6 +29,7 @@ const Home = () => {
         <Offer/>
         <BestSeller/>
         <Faq/>
+        <Blog/>
       {/* All Components Part End Here  */}
 
     </>

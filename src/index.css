@@ -90,6 +90,10 @@
   margin-bottom: 24px !important;
 }
 
+.custom-collapse:last-child {
+  margin-bottom: 0 !important;
+}
+
 .custom-collapse .ant-collapse-content {
   border-top: none !important;
 }
