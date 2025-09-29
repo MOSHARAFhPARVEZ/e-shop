@@ -3,7 +3,6 @@ import BlogTwo from "../../../../assets/Blog/BlogTwo.jpg"
 import BlogThree from "../../../../assets/Blog/BlogThree.jpg"
 import BlogFour from "../../../../assets/Blog/BlogFour.jpg"
 import BlogFive from "../../../../assets/Blog/BlogFive.jpg"
-import BlogSix from "../../../../assets/Blog/BlogSix.jpg"
 
 export const BlogData = [
     {
@@ -28,7 +27,7 @@ export const BlogData = [
         category: "JavaScript",
         author: "Michael Johnson",
         date: "2022-01-10",
-        image: BlogThree
+        image: BlogOne
     },
     {
         id: 4,
@@ -36,7 +35,7 @@ export const BlogData = [
         category: "CSS",
         author: "Emily Davis",
         date: "2022-01-15",
-        image: BlogFour
+        image: BlogTwo
     },
     {
         id: 5,
@@ -44,7 +43,7 @@ export const BlogData = [
         category: "Node.js",
         author: "Chris Wilson",
         date: "2022-01-20",
-        image: BlogFive
+        image: BlogOne
     },
     {
         id: 6,
@@ -52,7 +51,7 @@ export const BlogData = [
         category: "TypeScript",
         author: "Sophia Martinez",
         date: "2022-01-25",
-        image: BlogSix
+        image: BlogTwo
     },
     {
         id: 7,
@@ -68,7 +67,7 @@ export const BlogData = [
         category: "Tools",
         author: "Olivia Taylor",
         date: "2022-02-01",
-        image: BlogOne
+        image: BlogTwo
     },
     {
         id: 9,
@@ -84,7 +83,7 @@ export const BlogData = [
         category: "JavaScript",
         author: "Sophia White",
         date: "2022-02-10",
-        image: BlogOne
+        image: BlogTwo
     },
     {
         id: 11,
@@ -100,7 +99,7 @@ export const BlogData = [
         category: "Performance",
         author: "Mia Harris",
         date: "2022-02-20",
-        image: BlogOne
+        image: BlogTwo
     },
     {
         id: 13,
@@ -116,7 +115,7 @@ export const BlogData = [
         category: "CSS",
         author: "Isabella Lewis",
         date: "2022-03-01",
-        image: BlogOne
+        image: BlogTwo
     },
     {
         id: 15,
@@ -132,7 +131,7 @@ export const BlogData = [
         category: "Git",
         author: "Charlotte Allen",
         date: "2022-03-10",
-        image: BlogOne
+        image: BlogTwo
     },
     {
         id: 17,
@@ -148,7 +147,7 @@ export const BlogData = [
         category: "Security",
         author: "Amelia King",
         date: "2022-03-20",
-        image: BlogOne
+        image: BlogTwo
     },
     {
         id: 19,
@@ -164,6 +163,6 @@ export const BlogData = [
         category: "Next.js",
         author: "Harper Adams",
         date: "2022-03-30",
-        image: BlogOne
+        image: BlogTwo
     }
 ]

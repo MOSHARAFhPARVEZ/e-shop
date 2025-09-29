@@ -3,9 +3,13 @@ import GlobalContainer from '../../../../globalComponents/GlobalContainer'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { FaArrowRightLong } from 'react-icons/fa6'
+import BlogCard from '../../../../globalComponents/blogCard/BlogCard'
+import { BlogData } from './BlogData'
+import { useLocation } from 'react-router-dom';
 
 const Blog = () => {
     const {t} = useTranslation()
+    const {pathname} = useLocation();
   return (
     <>
         <section className='mt-[90px] mb-[100px]'>
@@ -22,8 +26,12 @@ const Blog = () => {
                         <span className='text-orange group-hover:text-black01 group-hover:translate-x-2 transition-transform duration-300'><FaArrowRightLong size='28px'/></span>
                     </div>
                 </div>
-                <div>
-
+                <div className='grid grid-cols-3 gap-x-12 mt-12'>
+                    {
+                        BlogData.slice(0,3).map((blog)=>(
+                            <BlogCard pathname={pathname} {...blog}/>
+                        ))
+                    }
                 </div>
             </GlobalContainer>
         </section>
