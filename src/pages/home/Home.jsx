@@ -11,6 +11,8 @@ import Offer from './Components/offer/Offer';
 import BestSeller from './Components/bestSeller/BestSeller';
 import Faq from './Components/faq/Faq';
 import Blog from './Components/blog/Blog';
+import Brand from './Components/Brand/Brand';
+import HomeNewsletter from './Components/homeNewsletter/Index';
 
 const Home = () => {
 // const {t} = useTranslation()
@@ -30,6 +32,8 @@ const Home = () => {
         <BestSeller/>
         <Faq/>
         <Blog/>
+        <Brand/>
+        <HomeNewsletter/>
       {/* All Components Part End Here  */}
 
     </>
