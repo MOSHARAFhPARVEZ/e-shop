@@ -7,7 +7,7 @@ const useStockStatus = (stock , sold) => {
         const roundedPercentage = Math.round(soldpercentage);
 
 
-        console.log("roundedPercentage", roundedPercentage);
+
         
 
         if(roundedPercentage >= 100 || availableStock <= 0){
