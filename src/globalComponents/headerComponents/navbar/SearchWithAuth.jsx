@@ -9,7 +9,7 @@ const SearchWithAuth = () => {
     <>
         <div className='flex justify-between items-center gap-x-5'>
             <div className='flex items-center justify-between border border-black02op50 px-[18px] py-[18px] rounded-[10px] w-[332px] h-[56px]'>
-                <input type="search" placeholder={t('search_products ...')} className='search_products' name="" id="" />
+                <input type="text" placeholder={t('search_products ...')} className='search_products' />
                 <CiSearch size={20} />
             </div>
             <div className='flex items-center gap-x-3'>

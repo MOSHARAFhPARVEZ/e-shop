@@ -26,6 +26,13 @@
   --color-black02op25: #30303040;
   --color-black02op50: #30303080;
   --color-white03: #8C8C8C;
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+  --breakpoint-3xl: 1700px;
 }
 
 
@@ -53,12 +60,12 @@
 }
 
 .search_products {
-  /* width: 332px;
-  height: 56px;
-  border-radius: 10px;
-  border: 1px solid #30303080;
-  padding: 18px 18px; */
   outline: none;
+}
+
+.mobile_search_products {
+  outline: none;
+  font-size: 10px !important;
 }
 
 .word-space-sm {
