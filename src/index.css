@@ -150,3 +150,26 @@
   line-height: 30px !important;
   color: #303030 !important;
 }
+
+.custom_drawer .ant-drawer-header {
+  border: none !important;
+}
+
+.custom_drawer .ant-drawer-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  color: #FF624C;
+  border: 1px solid #FF624C;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+}
+
+.custom_drawer .ant-drawer-close:hover {
+  background-color: #FF624C !important;
+  color: white !important;
+  border: none  !important;
+  transition: all 0.3s ease-in-out !important;
+}
