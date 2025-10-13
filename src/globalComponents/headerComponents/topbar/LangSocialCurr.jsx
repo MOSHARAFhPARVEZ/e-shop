@@ -55,7 +55,7 @@ const LangSocialCurr = () => {
   return (
     <>
     
-    <div className='flex items-center w-full gap-x-4 justify-end'>
+    <div className='flex items-center w-full gap-1 lg:gap-x-4 lg:justify-end'>
         <div>
             <Select
                 showSearch
@@ -85,8 +85,8 @@ const LangSocialCurr = () => {
           className="customSelect"
         />
         </div>
-        <div className='w-[1px] h-[32px] bg-black02op25'></div>
-        <div className='flex items-center gap-x-[24px]'>
+        <div className='w-[1px] h-[32px] bg-black02op25 hidden lg:block'></div>
+        <div className='lg:flex items-center gap-x-[24px] hidden'>
             <div>
                 <Link to="www.facebook.com">
                     <FaFacebookF color='#303030' size="16px"/>

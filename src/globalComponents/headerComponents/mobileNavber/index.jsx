@@ -6,6 +6,8 @@ import { CiSearch } from 'react-icons/ci'
 import { useTranslation } from 'react-i18next'
 import { IoMenu } from 'react-icons/io5'
 import CustomDrawer from '../../drawer'
+import LangSocialCurr from '../topbar/LangSocialCurr'
+import NavList from './NavList'
 
 const MobileNavber = () => {
     const { t } = useTranslation();
@@ -30,8 +32,19 @@ const MobileNavber = () => {
                 </div>
             </GlobalContainer>
         </div>
-    <CustomDrawer placement='left' open={open} setOpen={setOpen} title="Menu" closable={true} rootClassName="custom_drawer">
-        Drawer Content
+    <CustomDrawer 
+        placement='left' 
+        open={open} 
+        setOpen={setOpen} 
+        title={ <div>
+                    <LangSocialCurr/>
+                </div>} 
+        closable={true} 
+        rootClassName="custom_drawer"
+    >
+        <div>
+            <NavList/>
+        </div>
     </CustomDrawer>
     </>
   )
