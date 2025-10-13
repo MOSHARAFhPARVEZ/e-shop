@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import GlobalContainer from '../../GlobalContainer'
 import { Link } from 'react-router-dom'
 import Logo from '../../../assets/svg/logo'
@@ -12,6 +12,17 @@ import NavList from './NavList'
 const MobileNavber = () => {
     const { t } = useTranslation();
     const [open, setOpen] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if(window.innerWidth > 991){
+                setOpen(false);
+            }
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    },[])
   return (
     <>
         <div className='border-b border-b-black02op25'>
