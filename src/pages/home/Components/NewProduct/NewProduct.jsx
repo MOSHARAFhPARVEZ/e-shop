@@ -17,16 +17,16 @@ const NewProduct = () => {
         <>
             <section>
                 <GlobalContainer>
-                    <div className='relative mt-[80px]'>
+                    <div className='relative mt-5 lg:mt-[80px]'>
                         <div className='flex items-center justify-between mb-[48px]'>
-                            <h2 className='font-poppins font-semibold text-[36px] text-black01 leading-[46px]'>{t('New_Products')}</h2>
+                            <h2 className='font-poppins font-semibold text-[20px] md:text-[36px] text-black01 leading-[25px] lg:leading-[46px]'>{t('New_Products')}</h2>
                             <div className='flex items-end gap-x-4'>
                                 <p className='font-montserrat font-normal text-base leading-6 text-black01'>{t('Sort_by')}</p>
                                 <MenubarCategories icons={true} className='font-montserrat font-bold text-base text-orange leading-[24px] cursor-pointer'/>
                             </div>
                         </div>
                     </div>
-                    <div className='grid grid-cols-5'>
+                    <div className='grid grid-cols-1 lg:grid-cols-5 gap-y-2 lg:gap-y-0'>
                         {
                             NewProductData?.slice(0,initialData)?.map((product)=>(
                                 <ProductCards key={product.id} image={product?.image} rating={product?.rating} title={product.title} category={product.category} totalRating={product.totalRating} price={product.price} discount={product.discount} />

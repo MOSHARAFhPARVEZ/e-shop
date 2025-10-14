@@ -10,10 +10,10 @@ import { CiShare2 } from 'react-icons/ci'
 const ProductCards = ({image , price , category , title , rating , totalRating , discount}) => {
   return (
     <>
-        <div className='border group border-transparent hover:border-black02op25 pt-[24px] pr-[24px] pb-[44px] pl-[23px] rounded-[10px] w-[285px]'>
+        <div className='border group border-transparent hover:border-black02op25 pt-[24px] pr-[24px] pb-[44px] pl-[23px] rounded-[10px] w-auto lg:w-[285px]'>
             <div className='relative'>
                 <div className='relative w-full h-[214px] overflow-hidden rounded-[10px]'>
-                    <img src={image} alt="product image" className='w-full h-full ' />
+                    <img src={image} alt="product image" className='w-full h-full object-cover' />
                     <div className='absolute bottom-[28px] left-2/4 -translate-x-2/4 translate-y-10 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all ease-linear duration-300'>
                         <div className='flex  items-center gap-x-[18px] '>
                             <div className='w-[50px] h-[50px] rounded-full border border-orange flex items-center justify-center bg-white text-orange hover:bg-orange transition-all ease-in duration-300 hover:text-white font-bold text-[20px] cursor-pointer' title='Add to Cart'>
