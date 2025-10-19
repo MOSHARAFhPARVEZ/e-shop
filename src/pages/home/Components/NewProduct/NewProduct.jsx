@@ -26,7 +26,7 @@ const NewProduct = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='grid grid-cols-1 lg:grid-cols-5 gap-y-2 lg:gap-y-0'>
+                    <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-x-2 gap-y-2 lg:gap-y-0'>
                         {
                             NewProductData?.slice(0,initialData)?.map((product)=>(
                                 <ProductCards key={product.id} image={product?.image} rating={product?.rating} title={product.title} category={product.category} totalRating={product.totalRating} price={product.price} discount={product.discount} />

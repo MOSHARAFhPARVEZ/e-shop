@@ -12,14 +12,14 @@ const OfferLef = () => {
   return (
     <>
         <div>
-            <h3 className='font-poppins font-bold text-[56px] text-black01 leading-[68px]'>{ t("Spring Sale") }</h3>
+            <h3 className='font-poppins font-bold text-[50px] lg:text-[56px] text-black01 leading-7 lg:leading-[68px]'>{ t("Spring Sale") }</h3>
             <div className='mt-10'>
                 <Countdown date={targetTime}  renderer={CountDown}/>
             </div>
             <CommonButton className="!bg-orange !py-[20px] !px-10 !border-0 mt-[72px] !rounded-[10px]" >
                 <span className='font-montserrat font-bold text-[20px] leading-[30px] text-white hover:text-white'>Shop Now</span>
             </CommonButton>
-            <div className='mt-20'>
+            <div className='mt-20 hidden lg:block'>
                 <img src={DotImage} alt="" />
             </div>
         </div>
