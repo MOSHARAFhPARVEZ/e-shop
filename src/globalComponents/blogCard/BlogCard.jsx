@@ -8,15 +8,15 @@ const BlogCard = ({pathname , ...props}) => {
     const HomePageCard = () => 
         isHomePage && (
         <>
-            <div className='border border-transparent hover:border-black02op25 rounded-[25px] hover:p-[52px] duration-500 transition-all ease-in w-[440px]'>
-                <div className='max-h-[406px]  rounded-[25px] overflow-hidden'>
+            <div className='border border-transparent hover:border-black02op25 rounded-[25px] hover:p-5 lg:hover:p-[52px] duration-500 transition-all ease-in w-[350px] lg:w-[440px]'>
+                <div className='max-h-[350px] lg:max-h-[406px]  rounded-[25px] overflow-hidden'>
                     <img src={image} alt="Blog Image" className='w-full h-full object-cover' />
                 </div>
                 <div>
-                    <h5 className='font-poppins font-semibold text-black01 text-[24px] leading-[30px] my-[32px]'>{title}</h5>
+                    <h5 className='font-poppins font-semibold text-black01 text-[20px] lg:text-[24px] leading-[30px] my-4 lg:my-[32px]'>{title}</h5>
                     <div className='flex items-center justify-between'>
-                        <span className='py-[7px] px-[12px] bg-orange rounded-[10px] font-montserrat text-base text-white leading-6'> {category} </span>
-                        <div className='flex items-center gap-x-[10px] font-montserrat text-[14px] leading-[20px] font-normal text-black01'>
+                        <span className='py-[5px] lg:py-[7px] px-[10px] lg:px-[12px] bg-orange rounded-[5px] lg:rounded-[10px] font-montserrat text-xs lg:text-base text-white leading-6'> {category} </span>
+                        <div className='flex items-center gap-x-[10px] font-montserrat lg:text-[14px] leading-[20px] font-normal text-black01'>
                             <FaClock color="#303030" size={19} />
                             <p> {date} </p>
                         </div>

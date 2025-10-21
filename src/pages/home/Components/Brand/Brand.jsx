@@ -8,10 +8,39 @@ import GlobalContainer from '../../../../globalComponents/GlobalContainer'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules'
 
+const breakpoints = {
+    320: {
+      slidesPerView: 1,
+    },
+    400: {
+      slidesPerView: 1,
+    },
+    500: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 5,
+    }, 
+    1400: {
+      slidesPerView: 5,
+    }, 
+}
+
+
+
 const Brand = () => {
   return (
     <>
-        <section className='mb-[110px]'>
+        <section className='mb-5 lg:mb-[110px] px-4 lg:px-0'>
             <GlobalContainer>
                 <Swiper
                     spaceBetween={50}
@@ -23,36 +52,37 @@ const Brand = () => {
                         disableOnInteraction: false,
                         pauseOnMouseEnter: true,
                     }}
+                    breakpoints={breakpoints}
                 >
                     <SwiperSlide>
-                        <img src={BrandOne} alt="" />
+                        <img src={BrandOne} alt="" className='w-full '/>
                     </SwiperSlide>       
                     <SwiperSlide>
-                        <img src={BrandTwo} alt="" />
+                        <img src={BrandTwo} alt="" className='w-full '/>
                     </SwiperSlide>       
                     <SwiperSlide>
-                        <img src={BrandThree} alt="" />
+                        <img src={BrandThree} alt="" className='w-full '/>
                     </SwiperSlide>       
                     <SwiperSlide>
-                        <img src={BrandFour} alt="" />
+                        <img src={BrandFour} alt="" className='w-full '/>
                     </SwiperSlide>       
                     <SwiperSlide>
-                        <img src={BrandFive} alt="" />
+                        <img src={BrandFive} alt="" className='w-full '/>
                     </SwiperSlide>       
                     <SwiperSlide>
-                        <img src={BrandOne} alt="" />
+                        <img src={BrandOne} alt="" className='w-full '/>
                     </SwiperSlide>       
                     <SwiperSlide>
-                        <img src={BrandTwo} alt="" />
+                        <img src={BrandTwo} alt="" className='w-full '/>
                     </SwiperSlide>       
                     <SwiperSlide>
-                        <img src={BrandThree} alt="" />
+                        <img src={BrandThree} alt="" className='w-full '/>
                     </SwiperSlide>       
                     <SwiperSlide>
-                        <img src={BrandFour} alt="" />
+                        <img src={BrandFour} alt="" className='w-full '/>
                     </SwiperSlide>       
                     <SwiperSlide>
-                        <img src={BrandFive} alt="" />
+                        <img src={BrandFive} alt="" className='w-full '/>
                     </SwiperSlide>       
                 </Swiper>
             </GlobalContainer>
