@@ -17,15 +17,15 @@ const Footer = () => {
   const {t} = useTranslation();
   return (
     <>
-      <footer className='mt-[100px]'> 
+      <footer className='mt-10 lg:mt-[100px] px-5'> 
         <GlobalContainer>
           <div className=''>
-            <div className='grid grid-cols-[1fr_2fr] gap-x-4 h-full'>
+            <div className='grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-x-4 h-full'>
               <div className='flex justify-between flex-col'>
                 <Link to="/">
                   <Logo/>
                 </Link>
-                <div>
+                <div className='mt-4 lg:mt-0'>
                   <ul>
                     <li className='flex items-center gap-x-[12px] text-black01'>
                       <div>
@@ -48,7 +48,7 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className='grid grid-cols-4 gap-x-2'>
+              <div className='grid grid-cols-2 lg:grid-cols-4 gap-x-2 mt-5 lg:mt-0'>
                 {
                   FooterData.map((item)=> {
                     const LinkLists = item.links;
@@ -70,7 +70,7 @@ const Footer = () => {
                     )
                   })
                 }
-                <div>
+                <div className='mt-5 lg:mt-0'>
                   <div>
                     <h4 className='text-popins font-semibold text-[20px] leading-[30px] text-black'>Payments</h4>
                     <div className='flex items-center gap-x-3 mt-[24px]'>
@@ -80,7 +80,7 @@ const Footer = () => {
                       <img src={paypal} alt="payments image" />
                     </div>
                   </div>
-                  <div className='mt-[73px]'>
+                  <div className='mt-5 lg:mt-[73px]'>
                     <h4 className='text-popins font-semibold text-[20px] leading-[30px] text-black'>Follow Us</h4>
                     <ul>
                       <li className='mt-6 font-montserrat text-[16px] font-normal leading-[24px] text-black01 hover:text-orange duration-300 ease-in transition-all'>
@@ -105,14 +105,14 @@ const Footer = () => {
             </div>
           </div>
           <div className='border-t border-t-black02op25 mt-[40px] py-3'>
-            <div className='mt-2 flex items-center justify-between text-montserrat font-normal text-[14px] leading-[24px] text-black01'>
+            <div className='mt-2 flex flex-col lg:flex-row items-center justify-between text-montserrat font-normal text-[14px] leading-[24px] text-black01'>
               <div>
-                <p className='hover:text-orange duration-300 ease-in transition-all'>Copyright © {currentYear} <Link to='/'>E-Shop</Link>. All Rights Reserved.</p>
+                <p className='hover:text-orange text-xs lg:text-[14px] duration-300 ease-in transition-all'>Copyright © {currentYear} <Link to='/'>E-Shop</Link>. All Rights Reserved.</p>
               </div>
               <div className='flex items-center gap-x-2'>
-                <span className='hover:text-orange duration-300 ease-in transition-all'><Link>Privacy Policy</Link></span>
-                |<span className='hover:text-orange duration-300 ease-in transition-all'><Link>Terms & Condition</Link></span>|
-                <span className='hover:text-orange duration-300 ease-in transition-all'><Link>Sitemap</Link></span>
+                <span className='hover:text-orange text-xs lg:text-[14px] duration-300 ease-in transition-all'><Link>Privacy Policy</Link></span>
+                |<span className='hover:text-orange text-xs lg:text-[14px] duration-300 ease-in transition-all'><Link>Terms & Condition</Link></span>|
+                <span className='hover:text-orange text-xs lg:text-[14px] duration-300 ease-in transition-all'><Link>Sitemap</Link></span>
               </div>
             </div>
           </div>
